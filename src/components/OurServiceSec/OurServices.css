@@ -1,0 +1,111 @@
+.container {
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 8%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    overflow-x: hidden;
+}
+
+.section-two-main-text {
+    font-family: Sansation;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.pink-dash {
+    width: 9%;
+    border: 2px solid #E74C3C;
+    margin: 1rem auto;
+}
+
+.section-two-sub-text {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.side_image, .center_image {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+}
+
+.center_image {
+    max-width: 530px;
+}
+
+.OurServices-footer {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.icon-texts {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.mini_title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: Sansation;
+}
+
+.red_icons {
+    width: 50px;
+}
+
+@media (max-width: 1000px) {
+    .section-two-main-text {
+        font-size: 1.75rem;
+    }
+
+    .pink-dash {
+        width: 20%;
+    }
+
+    .section-two-sub-text {
+        font-size: 0.875rem;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side_image, .center_image {
+        width: 100%;
+    }
+
+    .OurServices-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-texts {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

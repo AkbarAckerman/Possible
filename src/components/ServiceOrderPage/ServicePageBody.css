@@ -1,0 +1,171 @@
+.service-page-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.service-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-image-box {
+    background-color: #F5F5F5;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.service-icon {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-text-box {
+    flex: 1;
+    margin-left: 2rem;
+    text-align: left;
+    padding-right: 4%;
+}
+
+.service-text-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-text-box p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.service-button {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #c0392b;
+}
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: -32%;
+    width: 32%;
+    height: 100%;
+    background: white;
+    transition: right 0.3s ease;
+    z-index: 1050;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.offcanvas.show {
+    right: 0;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #E74C3C;
+    color: white;
+}
+
+.offcanvas-title{
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.offcanvas-body {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.offcanva-main-text{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+    .service-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .service-text-box {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .service-button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .offcanvas {
+        width: 50%;
+        right: -50%;
+    }
+
+    .offcanvas.show {
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .offcanvas {
+        width: 100%;
+        right: -100%;
+    }
+
+    .offcanvas.show {
+        right: 0;
+    }
+
+    .offcanvas-title {
+        font-size: 1.8rem;
+    }
+
+    .offcanvas-body {
+        padding: 0.8rem;
+    }
+
+    .btn-close {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,107 @@
+.facts {
+    padding: 8% 10% 9%;
+    text-align: center;
+}
+
+.facts_main_text {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.facts_sub_text {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 2.5rem;
+    width: 80%;
+    margin: 0 auto 5%;
+}
+
+.facts_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.facts_item {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    max-width: 300px;
+}
+
+.fact_icons {
+    width: 48px;
+    margin-right: 20px;
+}
+
+.fact_numbers {
+    color: #2A2A2A;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-align: left;
+}
+
+.facts_pink_dash {
+    width: 50px;
+    border: 2px solid #E74C3C;
+    margin: 0.5rem 0;
+    margin-left: 9px;
+}
+
+.fact_label{
+    color: #2A2A2A;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-top: 0.75rem;
+    margin-left: 9px;
+}
+
+@media (max-width: 768px) {
+    .facts_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facts_item {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .fact_numbers {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .fact_label, .fact_labell {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .facts_main_text {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .facts_sub_text {
+        font-size: 0.875rem;
+        width: 90%;
+    }
+
+    .fact_numbers {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .fact_label, .fact_labell {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}

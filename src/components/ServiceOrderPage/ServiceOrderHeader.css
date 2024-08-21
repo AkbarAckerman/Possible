@@ -1,0 +1,68 @@
+.service-page {
+    background-color: var(--overlay);
+    color: #fff;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-page:before {
+    content: '';
+    background: url('../images/servicepage_background.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.service-content {
+    max-width: 1100px;
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.service-text-wrapper {
+    margin-bottom: 20px;
+}
+
+.headline-text {
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.description-text {
+    width: 70%;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.description-sub-text{
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 940px) {
+    .headline-text {
+        font-size: 2.6rem;
+    }
+
+    .description-text {
+        font-size: 1.6rem;
+    }
+
+    .service-logo-wrapper {
+        top: 80px;
+        right: 10px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+}
