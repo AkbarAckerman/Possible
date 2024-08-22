@@ -18,6 +18,7 @@ const Navbar = () => {
             if (location.pathname !== '/order-service') {
                 navigate('/order-service');
             }
+            closeMenu(); // Close the menu after navigation
         } else {
             if (location.pathname !== '/') {
                 navigate(`/#${sectionId}`);
@@ -27,9 +28,10 @@ const Navbar = () => {
                     smooth: true,
                 });
             }
-            closeMenu();
+            closeMenu(); // Close the menu after scrolling
         }
     };
+    
 
     return (
         <div className='header'>
