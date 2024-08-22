@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    height: 130px;
+    height: 100px;
     width: 100%;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@
     padding-left: 20px; /* Added padding to position the logo properly */
 }
 .navbar_logo{
-    width: 150px;
+    width: 120px;
     height: auto;
     cursor: pointer;
 }
