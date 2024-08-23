@@ -112,3 +112,10 @@ a{
         width: 150px;
     }
 }
+@media screen and (max-width: 600px) {
+    .navbar_logo{
+        width: 50px;
+        height: auto;
+        cursor: pointer;
+    }
+}
