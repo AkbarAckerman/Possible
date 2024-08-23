@@ -1,7 +1,7 @@
 .Home {
     background-color: var(--overlay);
     color: #fff;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -11,15 +11,19 @@
 
 .Home:before {
     content: '';
-    background: url('../images/header-bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url('../images/header-bg.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+    .Home:before {
+        background-attachment: scroll; /* Change to scroll for mobile devices */
+    }
 }
 
 .Home .content {
@@ -75,7 +79,7 @@ a.btn {
     background-color: #c0392b;
 }
 
-@font-face{
+@font-face {
     font-family: Sansation;
     src: url(/src/assetss/Sansation_Regular.ttf);
 }
@@ -105,10 +109,6 @@ a.btn {
 }
 
 @media screen and (max-width: 600px) {
-    .Home:before {
-        background-size: cover;
-        background-attachment: scroll; /* Allow the background to scroll normally on mobile devices */
-    }
     .main-text {
         font-size: 2.4rem;
     }
@@ -128,23 +128,22 @@ a.btn {
         font-size: 1rem;
     }
 }
+
 @media screen and (max-width: 400px) {
     .buttons {
-        display: flex; /* Ensure the container is using flexbox */
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center the buttons */
-        gap: 10px; /* Add spacing between buttons */
-        width: 100%; /* Ensure buttons take the full width of the container */
-        margin-top: 10rem; /* Adjust top margin */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10rem;
     }
 
     .btn {
-        width: 100%; /* Each button takes the full width of the parent */
-        padding: 15px; /* Adjust padding for touch targets */
-        font-size: 1rem; /* Maintain font size */
-        margin-right: 0; /* Remove any right margin */
-        margin-left: 0; /* Remove any left margin */
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
-
-
