@@ -103,10 +103,6 @@ a.btn {
 }
 
 @media screen and (max-width: 600px) {
-    .Home:before {
-        background-attachment: scroll; /* Change to scroll for mobile devices to prevent resizing */
-    }
-
     .main-text {
         font-size: 2.4rem;
     }
