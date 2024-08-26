@@ -1,143 +1,132 @@
 .Home {
-    /* background-color: var(--overlay); */
-    background: url('../images/header-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: url("../images/header-bg.jpg") no-repeat top center/cover;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* .Home:before {
-    content: '';
-    background: rgba(0, 0, 0, 0.514);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-} */
 .Home .content {
-    max-width: 1300px;
-    margin-top: 16rem;
-    text-align: center;
-    padding: 0 20px;
+  max-width: 1300px;
+  margin-top: 16rem;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .text-container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .main-text {
-    font-size: 4rem;
-    margin-bottom: 20px;
+  font-size: 4rem;
+  margin-bottom: 20px;
 }
 
 .sub-text {
-    width: 70%;
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin: 0 auto;
+  width: 70%;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
 .buttons {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15rem;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
 }
 
 a.btn {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    width: 300px;
-    margin-right: 1%;
-    margin-left: 1%;
-    background-color: #E74C3C;
-    border: 1px solid transparent;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+  width: 300px;
+  margin-right: 1%;
+  margin-left: 1%;
+  background-color: #e74c3c;
+  border: 1px solid transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #c0392b;
+  background-color: #c0392b;
 }
 
 @font-face {
-    font-family: Sansation;
-    src: url(/src/assetss/Sansation_Regular.ttf);
+  font-family: Sansation;
+  src: url(/src/assetss/Sansation_Regular.ttf);
 }
 
 @media screen and (max-width: 940px) {
-    .main-text {
-        font-size: 3rem;
-    }
+  .main-text {
+    font-size: 3rem;
+  }
 
-    .sub-text {
-        font-size: 1.4rem;
-    }
+  .sub-text {
+    font-size: 1.4rem;
+  }
 
-    .logo-container {
-        top: 40px;
-        right: 10px;
-    }
+  .logo-container {
+    top: 40px;
+    right: 10px;
+  }
 
-    .Home .content {
-        margin-top: 10rem;
-    }
+  .Home .content {
+    margin-top: 10rem;
+  }
 
-    .btn {
-        width: 250px;
-        font-size: 1rem;
-    }
+  .btn {
+    width: 250px;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .main-text {
-        font-size: 2.4rem;
-    }
+  .main-text {
+    font-size: 2.4rem;
+  }
 
-    .sub-text {
-        width: 90%;
-        font-size: 1.2rem;
-    }
+  .sub-text {
+    width: 90%;
+    font-size: 1.2rem;
+  }
 
-    .buttons {
-        margin-top: 10rem;
-    }
+  .buttons {
+    margin-top: 10rem;
+  }
 
-    .btn {
-        width: 100%;
-        padding: 15px;
-        font-size: 1rem;
-    }
+  .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-        margin-top: 10rem;
-    }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10rem;
+  }
 
-    .btn {
-        width: 100%;
-        padding: 15px;
-        font-size: 1rem;
-        margin-right: 0;
-        margin-left: 0;
-    }
+  .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
