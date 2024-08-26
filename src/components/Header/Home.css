@@ -1,17 +1,23 @@
 .Home {
     background-color: var(--overlay);
-    background-image: url('../images/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; /* Ensure the background image covers the entire container */
-    background-attachment: fixed; /* Keep the background image fixed */
     color: #fff;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.Home:before {
+    content: '';
+    background: url('../images/header-bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .Home .content {
     max-width: 1300px;
