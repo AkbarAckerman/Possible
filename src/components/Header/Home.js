@@ -6,6 +6,8 @@ import './Home.css';
 const Home = () => {
   return (
     <div className='Home' id='Home'>
+      {/* Background Image Container */}
+      <div className='background-image'></div>
       <div className='content'>
         <div className='text-container'>
           <p className='main-text'>Развивайте свой бизнес вместе с нами</p>
