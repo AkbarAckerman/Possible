@@ -19,13 +19,6 @@
     left: 0;
     z-index: -1;
 }
-
-@media screen and (max-width: 600px) {
-    .Home:before {
-        background-attachment: scroll; /* Change to scroll for mobile devices */
-    }
-}
-
 .Home .content {
     max-width: 1300px;
     margin-top: 16rem;
@@ -109,6 +102,11 @@ a.btn {
 }
 
 @media screen and (max-width: 600px) {
+    .Home:before {
+        background-attachment: scroll; /* Change to scroll for mobile devices to prevent resizing */
+        background-size: cover; /* Ensure the background image maintains size */
+    }
+
     .main-text {
         font-size: 2.4rem;
     }
@@ -130,6 +128,11 @@ a.btn {
 }
 
 @media screen and (max-width: 400px) {
+    .Home:before {
+        background-attachment: scroll; /* Change to scroll for mobile devices to prevent resizing */
+        background-size: cover; /* Ensure the background image maintains size */
+    }
+
     .buttons {
         display: flex;
         flex-direction: column;
