@@ -97,9 +97,11 @@ const Callback = () => {
               required
             />
           </div>
+          <div className='callback-btn-container'>
           <button type="submit" className="callback_btn">
             Отправить
           </button>
+          </div>
         </form>
       </div>
       <ToastContainer />

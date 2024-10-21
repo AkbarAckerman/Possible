@@ -18,6 +18,7 @@
   .callback_sub_text {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    text-align: center;
   }
   
   .form-group {
@@ -40,7 +41,12 @@
     font-size: 1rem;
     font-family: sans-serif;
   }
-  
+  .callback-btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .callback_btn {
     background-color: #E74C3C;
     color: #fff;

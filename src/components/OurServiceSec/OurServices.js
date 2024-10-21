@@ -10,7 +10,7 @@ const About = () => {
                 <div className='section-two-sub-text'>Наша миссия — помочь вашему бизнесу расти, особенно в финансовом отношении.</div>
                 <div className='services-container'>
                     <div className='service-item'>
-                        <img className='side_image' src="/assets/laptop_pic_one.svg" alt='' />
+                        <img className='side_image' src="/assets/laptop_pic_one.png" alt='' />
                         <div className='icon-side-texts'>
                             <div><img className='red_icons' src="/assets/red_icon_one.svg" alt='' /></div>
                             <div>
@@ -20,7 +20,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='service-item'>
-                        <img className='center_image' src="/assets/laptop_pic_two.svg" alt='' />
+                        <img className='center_image' src="/assets/laptop_pic_two.png" alt='' />
                         <div className='icon-texts'>
                             <div><img className='red_icons' src="/assets/red_icon_two.svg" alt='' /></div>
                             <div>
@@ -30,7 +30,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='service-item'>
-                        <img className='side_image' src="/assets/laptop_pic_three.svg" alt='' />
+                        <img className='side_image' src="/assets/laptop_pic_three.png" alt='' />
                         <div className='icon-side-texts'>
                             <div><img className='red_icons' src="/assets/red_icon_three.svg" alt='' /></div>
                             <div>
