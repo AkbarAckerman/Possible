@@ -36,46 +36,43 @@ function App() {
 const [loadingFinished, setLoadingFinished] = useState(false);
 
 return (
-  <>
-    {/* Pass setLoadingFinished as a prop */}
-    {!loadingFinished && <LoadingScreen setLoadingFinished={setLoadingFinished} />}
-    
-    {loadingFinished && (
-      <Router>
-        <ScrollToSection />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div>
-                <Navbar />
-                <Home />
-                <OurServices />
-                <AboutUs />
-                <Clients />
-                <OurTeam />
-                <Callback />
-                <Vlog />
-                <Facts />
-                <Footer />
-              </div>
-            }
-          />
-          <Route
-            path="/order-service"
-            element={
-              <div>
-                <Navbar />
-                <ServiceOrderHeader />
-                <ServicePageBody />
-                <Footer />
-              </div>
-            }
-          />
-        </Routes>
-      </Router>
-    )}
-  </>
+  <div className={loadingFinished ? 'content-visible' : 'content-hidden'}>
+    {/* Always render the loading screen and main content */}
+    <LoadingScreen setLoadingFinished={setLoadingFinished} />
+    <Router>
+      <ScrollToSection />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Navbar />
+              <Home />
+              <OurServices />
+              <AboutUs />
+              <Clients />
+              <OurTeam />
+              <Callback />
+              <Vlog />
+              <Facts />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
+          path="/order-service"
+          element={
+            <div>
+              <Navbar />
+              <ServiceOrderHeader />
+              <ServicePageBody />
+              <Footer />
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
+  </div>
 );
 }
 
