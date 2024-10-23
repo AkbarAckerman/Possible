@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 480px) {
+    .footer {
+        padding: 5%;
+    }
+
     .footer_contact_headline {
         text-align: center;
     }

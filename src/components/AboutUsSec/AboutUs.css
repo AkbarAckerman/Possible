@@ -55,3 +55,9 @@
         padding: 0.5rem 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .about_us{
+        height: 350px;
+    }
+}
