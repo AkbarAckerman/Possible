@@ -1,6 +1,6 @@
 import React from 'react';
 import './Clients.css';
-import client from '../images/client.png'
+import client from '../images/client.png';
 
 const Clients = () => {
   return (
